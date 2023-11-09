@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,800&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,700&family=Sen:wght@400;700;800&display=swap');
+
+body{
+    font-family: sans-serif;
+    
+}
+
+.cartas{
+  background-color: rgb(24, 22, 22);
+  height: 500px;
+  color: white;
+}
+
+.desc{
+  color: rgb(252, 248, 241);
+}
+.bi{
+  align-items: center !important;
+  text-align: center !important;
+}
+
+#marketing{
+  padding-top: 80px;
+}
+.arriba {
+  /*height: 80vh;*/
+  background-image: url(somos.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding: 5%;
+  text-align: center; /* Corregí la propiedad a text-align en lugar de text-justify */
+}
+
+a{
+  color:#444444;
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
+  font-weight: 500;
+  line-height: 16px;
+  margin:0px 20px;
+}
+.imagen_nosotros {
+  flex: 1;
+  text-align: right;
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+}
+.hover-link {
+  color: rgb(24, 24, 26);  /* Color predeterminado del texto del enlace */
+  text-decoration: none;  /* Eliminar subrayado predeterminado */
+  padding-bottom: 2px;  /* Espacio entre el texto y la línea */
+  position: relative;  /* Establecer posición relativa para el enlace */
+}
+
+.hover-link::after {
+  content: '';  /* Agregar un contenido vacío */
+  position: absolute;  /* Establecer posición absoluta */
+  left: 5px;  /* Alinear la línea con el texto */
+  bottom: 0;  /* Colocar la línea al final del enlace */
+  width: 100%;  /* Ancho de la línea al 100% del enlace */
+  height: 2px;  /* Grosor de la línea */
+  background-color: rgb(53, 147, 92);  /* Color de la línea */
+  opacity: 0;  /* Ocultar la línea por defecto */
+  transition: opacity 0.3s ease;  /* Transición suave para el efecto hover */
+}
+
+.hover-link:hover::after {
+  opacity: 1;  /* Mostrar la línea al hacer hover */
+}
+.residuos{
+   
+    background-color: rgb(233, 231, 231);
+}
+
+  .nav-link{
+    padding: 50px !important;
+    font-size: 20px !important;
+}
+
+.nav-desktop{
+    height: 140px !important;
+}
+.footer{
+  padding-top: 200px;
+}
+
+@media (min-width: 1000px) {
+    .nav-mobile {
+      display: none !important;
+      z-index: 999 !important;
+      position: relative !important;
+    }
+    .nav2 {
+      display: none; 
+    }
+  }
+ 
+  @media (max-width: 999px) {
+    .nav-desktop {
+      display: none !important;
+      z-index: 9999 !important;
+      position: relative !important;
+    }
+    .nav2 {
+      display: none !important; 
+    }
+    .fortalezas{
+      background-color: rgb(24, 22, 22);
+      height: 500px;
+      color: white;
+    }
+    .circular{
+      padding-top: 300px;
+    }
+  }
+
+ 
+@media screen and (min-width: 900px) {
+    .nav2 {
+      display: none; 
+    }
+  }
+  .logo {
+    max-width: 100%;
+    height: auto;
+  }
+    
+      .residuos{
+        top: 00px;
+        background-color: rgb(255, 255, 255);
+      
+    }
+  
+  /* Estilos para dispositivos móviles */
+  @media screen and (max-width: 800px) {
+    .nav1 {
+      display: none; /* Ocultar nav1 en dispositivos móviles */
+    }
+    .arriba {
+      background-size: cover;
+      padding: 20% 5%;
+    }
+   
+
+  }
+  @media screen and (min-width: 1000px) {
+    .nav2 {
+      display: none; 
+    }
+    .residuos{
+      top: 00px;
+      background-color: rgb(255, 255, 255);
+     
+  }
+   .arriba {
+    background-size: 100% auto;
+    padding: 5%;
+  }
+  }
+
+  @media screen and (min-width: 900px) {
+    .nav2 {
+      display: none; 
+    }
+    .residuos{
+      top: 00px;
+      background-color: rgb(255, 255, 255);
+     
+  }
+
+  .fortalezas{
+    background-color: rgb(24, 22, 22);
+    height: 500px;
+    color: white;
+  }
+  }
+  @media (max-width: 999px) {
+    .nav-mobile {
+      display: block !important;
+      z-index: 9999 !important;
+      position: absolute !important;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  
+    #video_inicio {
+      position: relative; /* Asegura que el video esté posicionado de forma relativa dentro de su contenedor */
+      z-index: 1; /* Asegura que el video tenga una posición inferior al nav-mobile */
+    }
+  }
+  /* Generico CSS */
+
+.section-title {
+	padding-top: 50px;
+  padding-bottom: 10px;
+  
+}
+
+.section-title h2 {
+	position: relative;
+	text-align: center;
+	color: #333;
+	font-size: 35px;
+	font-weight: 600;
+  text-transform: uppercase;
+  align-items: center;
+  text-align: center !important;
+}
+
+
+
+.section-title h2:after {
+	content: "";
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+	width:110px;
+	height: 3px;
+	background-color: #12f377;
+	margin-left: -54px;
+}
+
+.section-title p {
+	color: #333;
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 300;
+	text-align: center;
+	margin-top: 45px;
+}
+
+
+
+
+
+
+
+
+.features-inner-wrapper {
+	padding-top: 30px;
+	padding-bottom: 70px;
+}
+
+.left-feature-item {
+	position: relative;
+	padding-right: 90px;
+	margin-bottom: 65px;
+	text-align: right;
+	margin-top: 35px;
+}
+
+.right-feature-item {
+	position: relative;
+	padding-left: 90px;
+	margin-bottom: 65px;
+	text-align: left;
+	margin-top: 35px;
+}
+.arriba {
+  background-image: url(somos.jpeg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 20% 5%;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .logo {
+    max-width: 80%;
+  }
+}

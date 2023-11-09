@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,800&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,700&family=Sen:wght@400;700;800&display=swap');
+
+body{
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+.cartas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(255, 255, 255);
+}
+
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0,0,0,.4);
+    text-align: center;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: #64ba59;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .back .link {
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back .link a {
+    color: #f3f3f3;
+}
+
+.card .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .back p {
+    letter-spacing: 1px;
+} 
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+.contact{
+
+    padding-top:120px !important ;
+}
+
+
+
+a{
+    color:#444444;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-weight: 500;
+    line-height: 16px;
+    margin:0px 20px;
+  }
+ 
+  .hover-link {
+    color: rgb(24, 24, 26);  /* Color predeterminado del texto del enlace */
+    text-decoration: none;  /* Eliminar subrayado predeterminado */
+    padding-bottom: 2px;  /* Espacio entre el texto y la línea */
+    position: relative;  /* Establecer posición relativa para el enlace */
+  }
+  
+  .hover-link::after {
+    content: '';  /* Agregar un contenido vacío */
+    position: absolute;  /* Establecer posición absoluta */
+    left: 5px;  /* Alinear la línea con el texto */
+    bottom: 0;  /* Colocar la línea al final del enlace */
+    width: 100%;  /* Ancho de la línea al 100% del enlace */
+    height: 2px;  /* Grosor de la línea */
+    background-color: rgb(53, 147, 92);  /* Color de la línea */
+    opacity: 0;  /* Ocultar la línea por defecto */
+    transition: opacity 0.3s ease;  /* Transición suave para el efecto hover */
+  }
+  
+  .hover-link:hover::after {
+    opacity: 1;  /* Mostrar la línea al hacer hover */
+  }
+ 
+  
+  
+  
+  .by-name {
+    font-weight: 700;
+  }
+  
+    .nav-link{
+      padding: 50px !important;
+      font-size: 20px !important;
+  }
+  
+  .nav-desktop{
+      height: 140px !important;
+  }
+  .footer{
+    padding-top: 200px;
+  }
+  
+@media (min-width: 1000px) {
+    .nav-mobile {
+      display: none !important;
+      z-index: 999 !important;
+      position: relative !important;
+    }
+    .nav2 {
+      display: none; 
+    }
+  }
+  
+  
+    
+  
+
+  @media (max-width: 999px) {
+    .nav-desktop {
+      display: none !important;
+      z-index: 9999 !important;
+      position: relative !important;
+    }
+    .nav2 {
+      display: none !important; 
+    }
+   
+  }
+
+ 
+@media screen and (min-width: 900px) {
+    .nav2 {
+      display: none; 
+    }
+  }
+ 
+  
+  /* Estilos para dispositivos móviles */
+  @media screen and (max-width: 800px) {
+    .nav1 {
+      display: none; /* Ocultar nav1 en dispositivos móviles */
+    }
+
+   
+
+  }
+  @media screen and (min-width: 1000px) {
+    .nav2 {
+      display: none; 
+    }
+  
+  }
+
+  @media screen and (min-width: 900px) {
+    .nav2 {
+      display: none; 
+    }
+   
+  }
+  @media (max-width: 999px) {
+    .nav-mobile {
+      display: block !important;
+      z-index: 9999 !important;
+      position: absolute !important;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  
+  }
+  
